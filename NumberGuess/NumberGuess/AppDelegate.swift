@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  NumberGuesser_2
+//  NumberGuess
 //
-//  Created by Marlon Lehner on 07.10.21.
+//  Created by Simon Ritt-Rammer on 18.11.21.
 //
 
 import UIKit
