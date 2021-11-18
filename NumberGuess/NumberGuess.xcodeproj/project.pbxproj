@@ -13,6 +13,10 @@
 		7EC4301A2746722C003A8913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC430182746722C003A8913 /* Main.storyboard */; };
 		7EC4301C2746722D003A8913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EC4301B2746722D003A8913 /* Assets.xcassets */; };
 		7EC4301F2746722D003A8913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC4301D2746722D003A8913 /* LaunchScreen.storyboard */; };
+		7EC43027274676EE003A8913 /* NumberGuessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC43026274676EE003A8913 /* NumberGuessModel.swift */; };
+		7EC430292746773E003A8913 /* Unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC430282746773E003A8913 /* Unknown.png */; };
+		7EC4302B27467745003A8913 /* smilyy_sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC4302A27467745003A8913 /* smilyy_sad.png */; };
+		7EC4302D2746774B003A8913 /* smilyy_neutral.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7EC4302C2746774B003A8913 /* smilyy_neutral.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7EC4301B2746722D003A8913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EC4301E2746722D003A8913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EC430202746722D003A8913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EC43026274676EE003A8913 /* NumberGuessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGuessModel.swift; sourceTree = "<group>"; };
+		7EC430282746773E003A8913 /* Unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unknown.png; sourceTree = "<group>"; };
+		7EC4302A27467745003A8913 /* smilyy_sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smilyy_sad.png; sourceTree = "<group>"; };
+		7EC4302C2746774B003A8913 /* smilyy_neutral.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smilyy_neutral.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,13 @@
 		7EC430112746722C003A8913 /* NumberGuess */ = {
 			isa = PBXGroup;
 			children = (
+				7EC430282746773E003A8913 /* Unknown.png */,
+				7EC4302A27467745003A8913 /* smilyy_sad.png */,
+				7EC4302C2746774B003A8913 /* smilyy_neutral.jpeg */,
 				7EC430122746722C003A8913 /* AppDelegate.swift */,
 				7EC430142746722C003A8913 /* SceneDelegate.swift */,
 				7EC430162746722C003A8913 /* ViewController.swift */,
+				7EC43026274676EE003A8913 /* NumberGuessModel.swift */,
 				7EC430182746722C003A8913 /* Main.storyboard */,
 				7EC4301B2746722D003A8913 /* Assets.xcassets */,
 				7EC4301D2746722D003A8913 /* LaunchScreen.storyboard */,
@@ -125,8 +137,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC4302D2746774B003A8913 /* smilyy_neutral.jpeg in Resources */,
 				7EC4301F2746722D003A8913 /* LaunchScreen.storyboard in Resources */,
 				7EC4301C2746722D003A8913 /* Assets.xcassets in Resources */,
+				7EC430292746773E003A8913 /* Unknown.png in Resources */,
+				7EC4302B27467745003A8913 /* smilyy_sad.png in Resources */,
 				7EC4301A2746722C003A8913 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +155,7 @@
 			files = (
 				7EC430172746722C003A8913 /* ViewController.swift in Sources */,
 				7EC430132746722C003A8913 /* AppDelegate.swift in Sources */,
+				7EC43027274676EE003A8913 /* NumberGuessModel.swift in Sources */,
 				7EC430152746722C003A8913 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

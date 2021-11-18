@@ -1,24 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NumberGuess" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LBa-Mi-Vux">
+                                <rect key="frame" x="158.5" y="547" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="6Ta-U3-Q4U"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="eR7-Tn-yNi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="gaM-Hf-dLV"/>
+                                    <constraint firstAttribute="width" constant="97" id="j9N-1Q-oAI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avh-AK-7Zn">
+                                <rect key="frame" x="174.5" y="464" width="65" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Bdn-xD-rZT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Guess"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hha-M4-F4C">
+                                <rect key="frame" x="174" y="370" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1uc-P9-otd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="Unknown.png" translatesAutoresizingMaskIntoConstraints="NO" id="SZ7-6l-NWu">
+                                <rect key="frame" x="80" y="116" width="225" height="225"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LBa-Mi-Vux" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0GM-rG-znO"/>
+                            <constraint firstItem="hha-M4-F4C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="326" id="1Vb-2e-mNf"/>
+                            <constraint firstItem="avh-AK-7Zn" firstAttribute="centerX" secondItem="LBa-Mi-Vux" secondAttribute="centerX" id="Tcq-vD-oiA"/>
+                            <constraint firstItem="LBa-Mi-Vux" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="503" id="WAY-lg-jG0"/>
+                            <constraint firstItem="avh-AK-7Zn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="420" id="b5M-e2-XrR"/>
+                            <constraint firstItem="hha-M4-F4C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174" id="ciu-dW-Qsg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hha-M4-F4C" secondAttribute="trailing" symbolic="YES" id="jCd-hJ-NqP"/>
+                            <constraint firstItem="hha-M4-F4C" firstAttribute="top" secondItem="SZ7-6l-NWu" secondAttribute="bottom" constant="29" id="wHr-4u-qg9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-16" y="117"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Unknown.png" width="225" height="225"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
